@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <ul class="language">
+            <li>Java</li>
+        </ul>
+        <p class="para">Lorem ipsum dolor sit amet.</p>
+    </div>
+    <script>
+       function addlanguage(language){
+           const li = document.createElement('li')
+           li.innerHTML= `${language}`
+           document.querySelector('.language').
+           appendChild(li)
+       }
+       addlanguage('Javascript')
+
+       //another optimised approch
+       function addoptilang(langname){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langname))
+        document.querySelector('.language').appendChild(li)
+       }
+       addoptilang('golang')
+
+
+       let btn = document.createElement('button')
+       btn.innerText="click me"
+       btn.style.backgroundColor="green"
+       btn.style.color="white"
+       btn.style.padding="5px"
+       btn.style.margin="15px"
+       btn.style.borderRadius="15px"
+
+       document.querySelector('body').appendChild(btn)
+
+       
+    </script>
+</body>
+</html>

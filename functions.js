@@ -16,7 +16,7 @@
 //     return a+b;
 // }
 // console.log(sum(80,70)); //argument for adding
-
+ 
 //arrow function
 // let multiplication = (c,d)=>{
 //     return c*d
